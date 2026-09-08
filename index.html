@@ -1,46 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Book Information System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse - Book Information</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>📚 Book Information System</h1>
-    <p class="subtitle">Click on a book to view its details</p>
+    <header>
+        <div class="logo">📚 BookVerse</div>
+        <p>Discover stories. Explore worlds. Find your next book.</p>
+    </header>
 
-    <div class="book-container">
+    <main>
 
-        <div class="book-card">
-            <a href="book.html?book=gatsby">
-                <h2>The Great Gatsby</h2>
+        <section class="intro">
+            <h1>Explore Our Books</h1>
+            <p>Click on any book to learn more about it.</p>
+        </section>
+
+        <div class="book-container">
+
+            <a href="book.html?book=gatsby" class="book-card">
+                <div class="book-cover gatsby">
+                    <span>THE<br>GREAT<br>GATSBY</span>
+                </div>
+
+                <div class="book-info">
+                    <h2>The Great Gatsby</h2>
+                    <p>F. Scott Fitzgerald</p>
+                    <span class="genre">Fiction</span>
+                </div>
             </a>
-            <p>F. Scott Fitzgerald</p>
+
+
+            <a href="book.html?book=harry" class="book-card">
+                <div class="book-cover harry">
+                    <span>HARRY<br>POTTER</span>
+                </div>
+
+                <div class="book-info">
+                    <h2>Harry Potter</h2>
+                    <p>J.K. Rowling</p>
+                    <span class="genre">Fantasy</span>
+                </div>
+            </a>
+
+
+            <a href="book.html?book=alchemist" class="book-card">
+                <div class="book-cover alchemist">
+                    <span>THE<br>ALCHEMIST</span>
+                </div>
+
+                <div class="book-info">
+                    <h2>The Alchemist</h2>
+                    <p>Paulo Coelho</p>
+                    <span class="genre">Adventure</span>
+                </div>
+            </a>
+
+
+            <a href="book.html?book=wings" class="book-card">
+                <div class="book-cover wings">
+                    <span>WINGS<br>OF FIRE</span>
+                </div>
+
+                <div class="book-info">
+                    <h2>Wings of Fire</h2>
+                    <p>A.P.J. Abdul Kalam</p>
+                    <span class="genre">Autobiography</span>
+                </div>
+            </a>
+
         </div>
 
-        <div class="book-card">
-            <a href="book.html?book=harry">
-                <h2>Harry Potter</h2>
-            </a>
-            <p>J.K. Rowling</p>
-        </div>
+    </main>
 
-        <div class="book-card">
-            <a href="book.html?book=alchemist">
-                <h2>The Alchemist</h2>
-            </a>
-            <p>Paulo Coelho</p>
-        </div>
-
-        <div class="book-card">
-            <a href="book.html?book=wings">
-                <h2>Wings of Fire</h2>
-            </a>
-            <p>A.P.J. Abdul Kalam</p>
-        </div>
-
-    </div>
+    <footer>
+        <p>© 2026 BookVerse | Book Information Website</p>
+    </footer>
 
 </body>
+
 </html>
