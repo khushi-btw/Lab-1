@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="details-container">
+
+        <h1>📖 Book Details</h1>
+
+        <h2 id="book-title">The Great Gatsby</h2>
+
+        <p><b>Author:</b> <span id="book-author">F. Scott Fitzgerald</span></p>
+
+        <p><b>Published:</b> <span id="book-year">1925</span></p>
+
+        <p><b>Genre:</b> <span id="book-genre">Fiction</span></p>
+
+        <p>
+            <b>Description:</b>
+            <span id="book-description">
+                A story about wealth, love, and the American Dream.
+            </span>
+        </p>
+
+        <br>
+
+        <a class="back-button" href="index.html">← Back to Home</a>
+
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const book = params.get("book");
+
+        const books = {
+            gatsby: {
+                title: "The Great Gatsby",
+                author: "F. Scott Fitzgerald",
+                year: "1925",
+                genre: "Fiction",
+                description: "A story about wealth, love, and the American Dream."
+            },
+
+            harry: {
+                title: "Harry Potter",
+                author: "J.K. Rowling",
+                year: "1997",
+                genre: "Fantasy",
+                description: "A young wizard discovers his magical abilities and begins his journey at Hogwarts."
+            },
+
+            alchemist: {
+                title: "The Alchemist",
+                author: "Paulo Coelho",
+                year: "1988",
+                genre: "Adventure / Fiction",
+                description: "A young shepherd named Santiago follows his dreams and searches for a hidden treasure."
+            },
+
+            wings: {
+                title: "Wings of Fire",
+                author: "A.P.J. Abdul Kalam",
+                year: "1999",
+                genre: "Autobiography",
+                description: "The autobiography of A.P.J. Abdul Kalam, describing his childhood, education and journey to becoming a scientist and President of India."
+            }
+        };
+
+        if (books[book]) {
+            document.getElementById("book-title").textContent = books[book].title;
+            document.getElementById("book-author").textContent = books[book].author;
+            document.getElementById("book-year").textContent = books[book].year;
+            document.getElementById("book-genre").textContent = books[book].genre;
+            document.getElementById("book-description").textContent = books[book].description;
+        }
+    </script>
+
+</body>
+</html>
